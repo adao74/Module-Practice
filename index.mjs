@@ -2,13 +2,12 @@
 
 import express from 'express'
 import { sayHi } from './hello/index.mjs'  // need file name even though it was named index
-import getPosts from './main.mjs' // don't need brackets around getPosts because was exported as a default 
+import sayBye from './main.mjs' // don't need brackets because was exported as a default 
 
 const app = express();
 
 app.get('/', (req, res) => {
-    getPosts() // Ran with node => console.log prints in terminal NOT browser console. Each time, you navigate to localhost, getPosts() runs again...
-    return res.send('Hello ' + sayHi)
+    return res.send('Hello ' + sayHi + sayBye)
 });
 
 const port = 5000;
