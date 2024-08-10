@@ -1,7 +1,15 @@
 // ES Module (ESM) syntax
-// use import not require
+// use import & export
 // file is .mjs not .js
-// In terminal: if `node main.mjs` doesn't work, do `node --experimental-modules main.mjs`
+// In terminal: if `node main.mjs` doesn't work, do `node --experimental-modules main.mjs`  =>>>> Note: seems to work w/o experimental modules flag
+
+// E.g. for lodash:
+// use import not require
+
+// E.g. for getPosts that I built
+// export const variableNameExample = variableExample      =>>>> when you import, need brackets
+// OR
+// export default variableNameExample    =>>>>  when you import, don't need brackets 
 
 import _ from 'lodash'
 
@@ -31,7 +39,9 @@ const getPosts = () => {
     .catch(err => console.log(`Error,  ${err}`)) // for all errors
   }
 
-getPosts()
+
+// use getPosts() in other files
+export default getPosts
 
 
 
