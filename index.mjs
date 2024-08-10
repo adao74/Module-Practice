@@ -2,7 +2,7 @@
 
 import express from 'express'
 import { sayHi } from './hello/index.mjs'  // need file name even though it was named index
-import sayBye from './main.mjs' // don't need brackets because was exported as a default 
+import sayBye from './hello/index2.mjs' // don't need brackets because was exported as a default 
 
 const app = express();
 
