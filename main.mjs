@@ -1,7 +1,7 @@
 // ES Module (ESM) syntax
 // use import & export  (NOT require & module.export())
 // file is .mjs not .js
-// In terminal: if `node main.mjs` doesn't work, do `node --experimental-modules main.mjs`  =>>>> Note: seems to work w/o experimental modules flag
+// In terminal: if `node main.mjs` doesn't work, do `node --experimental-modules main.mjs`  =>>>> Note: seems to work w/o experimental modules flag, if you use the flag once...
 
 import _ from 'lodash'
 
@@ -32,5 +32,5 @@ const getPosts = () => {
   }
 
 
-
+getPosts()
 
