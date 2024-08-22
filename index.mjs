@@ -1,4 +1,6 @@
 // if `node index.mjs` doesn't work, do `node --experimental-modules index.mjs`    =>>>> Note: seems to work w/o experimental modules flag
+// Then go to localhost:5000
+
 
 import express from 'express'
 import { sayHi } from './hello/index.mjs'  // need file name even though it was named index
@@ -12,4 +14,5 @@ app.get('/', (req, res) => {
 
 const port = 5000;
 
+// console is terminal, not browser console
 app.listen(port, () => console.log(`Server started on port ${port}`));
